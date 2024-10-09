@@ -3,20 +3,33 @@
     top: 0;
     z-index: 99;
     background-color: var(--bg-color);
+    display: flex; /* Ojo al tocar. Se ponen en una misma linea y así podré jugar con su disposición*/
+    justify-content: space-between; /*cuidado*/
+    align-items: center; /*cuidado*/
+    padding: 1rem;
+
     .image {
         width: 40%;
         min-width: 150px;
         max-width: 250px;
     }
+
     .nav {
         .list{
             list-style: none;
             padding: 0;
             margin: 0;
+            display: flex;
+            gap: 10px;
         }
     }
 }
 
 .hidden {
     display: none;
+}
+@media screen and (width > 760px) {
+    .hidden {
+        display: block;
+    }
 }

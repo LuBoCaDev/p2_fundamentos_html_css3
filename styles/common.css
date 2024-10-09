@@ -1,9 +1,9 @@
 :root {
-    --bg-color: #000000;
+    --bg-color: #000;
     --main-brand-color: #7700ff;
     --main-brand-color: #b880f7;
     --secondary-brand-color: #09ff00;
-    --main-text-color: #ffffff;
+    --main-text-color: #fff;
     --border-color: #8d8d8d;
     --main-font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -21,3 +21,18 @@
     box-sizing: border-box;
 }
 
+@media print {
+    * {
+    color: black;
+    }
+    header.header, .footer, .banner {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: light) /*En caso de que el user tenga el modo light en su pc*/{
+    :root {
+        --bg-color: #fff;
+        --main-text-color: #000;
+    }
+}
