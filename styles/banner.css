@@ -1,0 +1,32 @@
+.banner{
+    height: 50vh;
+    align-content:center;
+    position:relative;
+    .italic {
+        font-style: italic;
+    }
+    .content {
+        text-align: center;
+        z-index: 1;
+        position: relative;
+    }
+
+    .image {
+        background-image: url(../assets/piedras.jpg);
+        
+        position: absolute;
+        background-size:contain; /*Recordatorio: de esta forma consigo que se ajuste */
+        background-repeat: no-repeat;
+        background-position: center;
+        
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+
+        opacity:0.2;
+
+
+    }
+}
+
