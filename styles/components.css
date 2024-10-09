@@ -1,8 +1,54 @@
-.btn{
+/*BOTONES*/
+.btn {
+    /*Botón principal*/
     color: var(--main-text-color);
     background-color: var(--main-brand-color);
     text-decoration: none;
     padding: 0.4rem;
     display: inline-block;
     border-radius: 50px;
+    border: 1px solid var(--main-brand-color);
+    /*Botón secundario*/
+    &.secondary {
+        background-color: transparent;
+        border: 1px solid var(--main-text-color);
+    }
+}
+@media screen and (hover: hover) {
+    .pointer {
+        cursor: pointer;
+    }
+    .btn {
+        cursor: pointer;
+        &:hover {
+            background-color: var(--main-brand-color-light);
+        }
+        &.secondary:hover{
+            background-color: var(--border-color);
+        }
+    }
+}
+
+/*COMPONENTES PARA FORMULARIO*/
+.form__element{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+    label {
+        margin-bottom: 0.3rem;
+    }
+    input {
+        padding: 3px;
+        border-radius: 5px;
+        border: none;
+        background: var(--input-bg-color);
+        color: var(--main-text-color)
+    }
+    textarea {
+        padding: 3px;
+        border-radius: 5px;
+        border: none;
+        background: var(--input-bg-color);
+        color: var(--main-text-color)
+    }
 }

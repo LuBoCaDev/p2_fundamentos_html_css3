@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avengers MCU</title>
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/components.css">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/banner.css">
     <link rel="stylesheet" href="styles/info.css">
+    <link rel="stylesheet" href="styles/form.css">
     
 </head>
 
@@ -69,9 +71,73 @@
                 <source src="assets/video-devices.m4v" type="video/mp4">
             </video>
         </div>
-        </section>
-        <p id="shows" class="bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempora possimus, consequuntur quod sed veniam? Quae
-        modi pariatur sapiente nulla cumque cum numquam, similique laborum mollitia, saepe ducimus, eligendi molestiae.</p>
+    </section>
+        
+        
+
+
+<!--FORMULARIO-->
+        <div class="form__card">
+            <form method="post">
+                <!--Info general-->
+                <div class="form__element">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" placeholder="Nombre" name="name" autocomplete="name" required>
+                </div>
+                <div class="form__element">
+                    <label for="surname">Apellido</label>
+                    <input type="text" id="surname" placeholder="Apellido" name="surname" autocomplete="given-name" required>
+                </div>
+                <div class="form__element">
+                    <label for="tlfn">Teléfono</label>
+                    <input type="tel" id="tlfn" placeholder="Nº de Teléfono" name="tlfn" autocomplete="tel" required>
+                </div>
+                <div class="form__element">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="eMail" name="correo" autocomplete="email" required>
+                </div>
+                <div class="form__element">
+                    <label for="github">Usuario de Github</label>
+                    <input type="text" id="github" placeholder="@username" name="github" autocomplete="off" pattern="^@[^\s]+"> <!--No requerido (pueden no tenerlo)-->
+                </div>
+                <!--Radio inputs Como Conociste -->
+                <fieldset class="form__element">
+                    <legend>¿Cómo me conociste?</legend>
+                    <div>
+                        <label class="pointer" for="github">Universidad Stark</label>
+                        <input type="radio" id="universidad" name="conocimiento" value="Universidad Stark" required>
+                        <br>
+                        <label class="pointer" for="github">KeepAvenging kick-off</label>
+                        <input type="radio" id="keepcodingkickoff" name="conocimiento" value="KeepAvenging kick-off" required>
+                        <br>
+                        <label class="pointer" for="github">Instituto Xavier</label>
+                        <input type="radio" id="colegio" name="conocimiento" value="Instituto Xavier" required>
+                        <br>
+                        <label class="pointer" for="github">Git Sanctorum</label>
+                        <input type="radio" id="github" name="conocimiento" value="Git Sanctorum" required>
+                    </div>
+                </fieldset>
+                <!--Más info-->
+                <div class="form__element">
+                    <label for="moreinfo">Más información</label>
+                    <textarea id="moreinfo" name="moreinfo" placeholder="Qué mas quieres saber" rows="5" maxlength="180"></textarea> <!--No requerido (pueden no buscar info adicional)-->
+                </div>
+                <!--Newsletter checkbox-->
+                <div class="form__element">
+                    <div>
+                        <input type="checkbox" id="newsletter" name="newsletter"> <!--No requerido (pueden no quererla)-->
+                        <label class="pointer" for="newsletter">Recibir newsletter</label>
+                    </div>
+                </div>
+                <!--Botones enviar/reset-->
+                <div class="form__element">
+                    <button class="btn" type="submit">Enviar</button>
+                    <button class="btn secondary" type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+
+
 
 
 

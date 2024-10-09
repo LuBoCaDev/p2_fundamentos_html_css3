@@ -1,20 +1,20 @@
 :root {
     --bg-color: #000;
     --main-brand-color: #7700ff;
-    --main-brand-color: #b880f7;
+    --main-brand-color-light: #b880f7;
     --secondary-brand-color: #09ff00;
     --main-text-color: #fff;
     --border-color: #8d8d8d;
+    --input-bg-color: #baf3d6;
     --main-font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
 
 .main-bg{
-    /*background-color: #000;
-    color: #FFF;*/
     background-color: var(--bg-color);
     color: var(--main-text-color);
     font-family: var(--main-font-family);
+    opacity: 1;
 }
 
 *{
