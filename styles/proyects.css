@@ -1,0 +1,19 @@
+.proyectos {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 900px;
+    img {
+        width: 100%;
+    }
+    .list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+        gap: 10px;
+        figure {
+            margin: 0;
+        }
+    }
+}

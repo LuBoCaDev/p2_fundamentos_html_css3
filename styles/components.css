@@ -1,6 +1,6 @@
 /*BOTONES*/
 .btn {
-    /*Botón principal*/
+    /*Botones en general*/
     color: var(--main-text-color);
     background-color: var(--main-brand-color);
     text-decoration: none;
@@ -8,6 +8,7 @@
     display: inline-block;
     border-radius: 50px;
     border: 1px solid var(--main-brand-color);
+    transition: background-color 0.5s;
     /*Botón secundario*/
     &.secondary {
         background-color: transparent;
