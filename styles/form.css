@@ -7,4 +7,8 @@
     margin:  0 auto;
     padding: 1rem 2rem;
     padding: 1rem;
-    }
+}
+    .form__card input,
+    .form__card textarea {
+        color: var(--secondary-text-color);
+}

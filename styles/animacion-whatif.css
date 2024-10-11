@@ -1,0 +1,33 @@
+/*ANIMACIÓN DE LAS IMÁGENES*/
+.clash {
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+.clash img {
+    width: 0;
+    flex-grow: 1; 
+    object-fit: cover; 
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+.clash img:hover {
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.clash a {
+    flex-grow: 1; 
+    display: flex;
+}
+
+.header {
+    padding-bottom: 0;
+}
+.general-body {
+    padding: 10px 0;
+}
+.footer {
+    padding-top: 0;
+}
