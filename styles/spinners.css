@@ -1,0 +1,36 @@
+.spinner {
+    margin: 0.5em;
+    background-color: var(--main-brand-color);
+    width: 325px;
+    height: 50px;
+    animation-name: test;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    border-radius: 30px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    text-align: left;
+    &.second {
+        width: 275px;
+    }
+    &.third {
+        width: 250px;
+    }
+    &.fourth {
+        width: 375px;
+    }
+    &.fifth {
+        width: 200px;
+    }
+}
+@keyframes test{
+    0% {
+        width: 100px;
+        background-color: #fff;
+    }
+    50% {
+        background-color: #fff;
+    }
+}

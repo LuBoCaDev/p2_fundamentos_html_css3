@@ -13,8 +13,6 @@
     }
 }
 
-
-
 @media (prefers-reduced-motion: no-preference) {
     @keyframes fade-in-from-top {
         0% {

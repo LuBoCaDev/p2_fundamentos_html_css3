@@ -10,18 +10,15 @@
     --secondary-text-color: #000;
     font-size: 20px;
 }
-
 .main-bg{
     background-color: var(--bg-color);
     color: var(--main-text-color);
     font-family: var(--main-font-family);
     opacity: 1;
 }
-
 *{
     box-sizing: border-box;
 }
-
 @media print {
     * {
     color: black;
@@ -30,10 +27,29 @@
         display: none;
     }
 }
-
 @media (prefers-color-scheme: light) /*En caso de que el user tenga el modo light en su pc*/{
     :root {
         --bg-color: #fff;
         --main-text-color: #000;
+    }
+}
+
+/*ESTRUCTURA GENERAL DE LOS CONTENIDOS*/
+.general-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+    .general-contenido {
+        text-align: left;
+        width: 25%;
+    }
+    .contenido-alternativo {
+        text-align: left;
+        width: 40%;
     }
 }
