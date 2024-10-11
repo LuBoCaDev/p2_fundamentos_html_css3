@@ -1,12 +1,13 @@
 :root {
     --bg-color: #000;
-    --main-brand-color: #7700ff;
-    --main-brand-color-light: #b880f7;
-    --secondary-brand-color: #8f854a;
-    --border-color: #8d8d8d;
-    --input-bg-color: #baf3d6;
+    --main-brand-color: #ff0000;
+    --main-brand-color-light: #fd5454;
+    --secondary-brand-color: #363636;
+    --border-color: #fff;
+    --input-bg-color: #fff;
     --main-font-family: Arial, Helvetica, sans-serif;
     --main-text-color: #fff;
+    --secondary-text-color: #000;
     font-size: 20px;
 }
 

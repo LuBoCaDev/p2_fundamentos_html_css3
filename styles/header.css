@@ -7,11 +7,13 @@
     justify-content: space-between; /*cuidado*/
     align-items: center; /*cuidado*/
     padding: 1rem;
+    height: 120px;
+
 
     .image {
         width: 40%;
-        min-width: 150px;
-        max-width: 250px;
+        min-width: 100px;
+        max-width: 200px;
     }
 
     .nav {

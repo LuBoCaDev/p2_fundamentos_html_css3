@@ -1,9 +1,9 @@
 /*PLACA DE FONDO PARA FORMULARIO PRINCIPAL*/
 .form__card {
-    background-color: rgba(137,31,207,0.116);
+    background-color: var(--secondary-brand-color);
     border-radius: 9px;
     width: 100%;
     max-width: 420px;
     margin:  0 auto;
     padding: 3rem 2rem;
-}
+    }

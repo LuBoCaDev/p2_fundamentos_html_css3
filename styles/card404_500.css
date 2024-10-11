@@ -1,0 +1,55 @@
+.card404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative; 
+    img {
+        width: 100%;                
+        max-width: 400px;
+        height: auto;
+        align-items: end;
+    }
+}
+
+/*boton chachi para la web de Dead Pool*/
+.button-deadpool-web {
+    margin: 20px 0;
+}
+.button-deadpool-web button {
+    padding: 10px 20px;
+    background-color: #C8102E;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: background-color 0.7s;
+}
+.button-deadpool-web button:hover {
+    background-color: #ff6b81;
+}
+
+/*Boton para volver*/
+.button-deadpool-troll {
+    margin: 1px 0;
+}
+button {
+    padding: 1px 2px;
+    background-color: transparent;
+    color: white;
+    border: red;
+    border: 1px solid rgba(255, 0, 0, 0.185);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+}
+button:hover {
+    background-color: #420101;
+}
+.error-message {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
