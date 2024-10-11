@@ -1,0 +1,15 @@
+.texto-video-saga {
+    width:100%;
+    margin: 0 auto;
+    max-width: 768px;
+    
+}
+@media screen and (width > 768px) {
+    .texto-video-saga {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+        align-items: center;
+    }
+}
+

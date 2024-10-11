@@ -27,12 +27,6 @@
         display: none;
     }
 }
-@media (prefers-color-scheme: light) /*En caso de que el user tenga el modo light en su pc*/{
-    :root {
-        --bg-color: #fff;
-        --main-text-color: #000;
-    }
-}
 
 /*ESTRUCTURA GENERAL DE LOS CONTENIDOS*/
 .general-body {
@@ -42,6 +36,8 @@
     height: 100vh;
     margin: 0;
     flex-direction: column;
+    padding-top: 20rem;
+    padding-bottom: 25rem;
 }
 @media screen and (min-width: 768px) {
     .general-contenido {
