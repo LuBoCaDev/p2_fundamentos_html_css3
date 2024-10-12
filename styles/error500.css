@@ -3,78 +3,73 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ocupa toda la altura de la ventana */
+    height: 100vh;
     position: relative; 
-    text-align: center; /* Alinear texto al centro */
-    z-index: 1; /* Asegura que el contenido esté por encima de la imagen de fondo */
+    text-align: center;
+    z-index: 1;
 }
-
 .error-message {
     font-size: 50px;
     font-weight: bold;
     color: white;
-    margin-bottom: 10px; /* Espacio entre mensajes */
+    margin-bottom: 10px;
 }
-
 .sub-message {
-    font-size: 20px; /* Tamaño de fuente más pequeño para el submensaje */
-    color: white; /* Color del texto */
-    margin-bottom: 20px; /* Espacio entre el mensaje y el video */
+    font-size: 20px;
+    color: white; 
+    margin-bottom: 20px;
 }
 
+/*video*/
 .video {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%; /* Asegúrate de que ocupa todo el ancho disponible */
-    max-width: 560px; /* Limitar el ancho máximo para no exceder el tamaño del iframe */
-    margin-bottom: 20px; /* Espacio entre el video y la imagen de fondo */
+    width: 100%;
+    max-width: 560px;
+    margin-bottom: 20px;
 }
-
 .video div {
-    padding-bottom: 56.25%; /* Mantiene la relación de aspecto 16:9 */
+    padding-bottom: 56.25%; /* esto mantiene los 16:9 */
     position: relative;
 }
-
 .video iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0; /* Comienza con opacidad 0 */
-    transition: opacity 2s ease-in-out; /* Transición suave en 2 segundos */
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
     animation: fade-in-from-top 9s ease-in-out forwards;
 }
 
-/* Animación de fade-in */
+/*fade-in */
 @keyframes fade-in-from-top {
     0% {
-        opacity: 0; /* Comienza invisible */
-        transform: translateY(-100%); /* Comienza fuera del área visible */
+        opacity: 0;
+        transform: translateY(-100%);
     }
     100% {
-        opacity: 0.8; /* Al final del fade-in, se queda con opacidad del 80% */
-        transform: translateY(0); /* Termina en su posición original */
+        opacity: 0.8;
+        transform: translateY(0);
     }
 }
 
 .background-image {
-    position: absolute; /* Posiciona la imagen de forma absoluta */
-    top: 50%; /* Centra la imagen verticalmente */
-    left: 50%; /* Centra la imagen horizontalmente */
-    width: 100%; /* Ocupa todo el ancho */
-    height: 50vh; /* Ocupa la mitad de la pantalla verticalmente */
-    object-fit: cover; /* Mantiene las proporciones en móviles */
-    transform: translate(-50%, -50%); /* Desplaza la imagen para centrarla completamente */
-    opacity: 0.1; /* Ajusta la opacidad */
-    z-index: 0; /* Mantiene la imagen detrás del contenido */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 50vh; 
+    object-fit: cover; 
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    z-index: 0;
 }
-
-/* Media Query para pantallas superiores a 768px */
 @media (min-width: 768px) {
     .background-image {
-        object-fit: contain; /* Evita que la imagen se recorte en pantallas grandes */
-        opacity: 0.05; /* Ajusta la opacidad en pantallas grandes */
+        object-fit: contain;
+        opacity: 0.05;
     }
 }

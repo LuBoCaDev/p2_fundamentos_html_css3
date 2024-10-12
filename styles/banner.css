@@ -13,17 +13,14 @@
 
     .image {
         background-image: url(../assets/avenguers_peque.png);
-        
         position: absolute;
-        background-size:cover; /*Recordatorio: de esta forma consigo que se ajuste */
+        background-size:cover;
         background-repeat: no-repeat;
         background-position: center;
-        
         top:0;
         bottom:0;
         right:0;
         left:0;
-
         opacity:0.05;
     }
     @media screen and (width > 760px) {
