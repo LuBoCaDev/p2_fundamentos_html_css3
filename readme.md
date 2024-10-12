@@ -15,7 +15,7 @@ https://marvelcinematicuniverse.fandom.com/es/wiki/Saga_del_Infinito
 ---
 
 * #### Header
-A la izquierda muestra el logo de los Vengadores. A la derecha encontramos enlaces a los elementos del portafolio, con estado hover suavizado. Algunos se ven en la versión móvil y otros no. El botón de "Recibir más info" va al formulario al final de la página de index y, por tanto, no está en el resto de páginas. Tanto estos botones como los del formulario y la página 404 tienen el estado hover suavizado.__*El CSS se puede encontrar en header.css y el de los botones en components.css*__.
+A la izquierda muestra el logo de los Vengadores. A la derecha encontramos enlaces a los elementos del portafolio, con estado hover suavizado. Algunos se ven en la versión móvil y otros no. El botón de "Recibir más info" va al formulario al final de la página de index y, por tanto, en las otras páginas se ha vinculado con `index.html#formulario`. Tanto estos botones como los del formulario y la página 404 tienen el estado hover suavizado.__*El CSS se puede encontrar en header.css y el de los botones en components.css*__.
 
 * #### Sección con nuestra descripción y barras de habilidades
 Se encuentran en el index. La descripción es la parte donde pone "Sobre los Vengadores" y la de las habilidades justo a continuación. Las barras empiezan en color blanco al igual que el color del texto, y a partir del 50% cambian al rojo, haciendo el efecto de que las letras también aparecen a partir de ese momento, aunque en realidad ya estaban ahí. __**La animación de las barras se encuentra en spinners.css.**__
@@ -113,7 +113,7 @@ El video se reproduce automáticamente y en silencio, empezando a la mitad, que 
 Nuestra web tiene dos elementos comunes en la mayoría de sus páginas: la barra de navegación y el footer.
 La barra de navegación muestra el logo de los Avengers a la izquierda y los botones de navegación a la derecha. Los botones nos llevan, respectivamente, a la página principal, a la de los proyectos, a la de What if...? y a la sección inferior de la página principal que contiene el formulario.
 <p>
-Estos dos últimos botones se ocultan en pantallas más pequeñas y, además, el del formulario solo está disponible en la página principal.
+Estos dos últimos botones se ocultan en pantallas más pequeñas.
 <p>
 Por otro lado, el footer es una franja sencilla que ocupa todo el ancho de la página y que no llega a tocar la parte inferior de la pantalla. En el centro, nos encontramos imágenes con links a webs externas que se abren en ventanas separadas.
 ---
