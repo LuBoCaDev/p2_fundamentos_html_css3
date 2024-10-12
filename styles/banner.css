@@ -12,10 +12,10 @@
     }
 
     .image {
-        background-image: url(../assets/piedras.jpg);
+        background-image: url(../assets/avenguers_peque.png);
         
         position: absolute;
-        background-size:contain; /*Recordatorio: de esta forma consigo que se ajuste */
+        background-size:cover; /*Recordatorio: de esta forma consigo que se ajuste */
         background-repeat: no-repeat;
         background-position: center;
         
@@ -24,11 +24,11 @@
         right:0;
         left:0;
 
-        opacity:0.2;
+        opacity:0.05;
     }
     @media screen and (width > 760px) {
         .image {
-            background-image: url(../assets/piedras2.jpg);
+            background-image: url(../assets/avengers_grande\ .png);
         }
     }
 }
