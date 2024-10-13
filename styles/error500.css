@@ -6,7 +6,7 @@
     height: 100vh;
     position: relative; 
     text-align: center;
-    /*z-index: 1;*/
+    z-index: 1;
 }
 .error-message {
     font-size: 50px;
@@ -43,14 +43,14 @@
     height: 100%;
     opacity: 0;
     transition: opacity 2s ease-in-out;
-    animation: fade-in-from-top 9s ease-in-out forwards;
+    animation: entradilla 9s ease-in-out forwards;
 }
 
-/*fade-in */
-@keyframes fade-in-from-top {
+/*fade-in desde abajo */
+@keyframes entradilla {
     0% {
         opacity: 0;
-        transform: translateY(-100%);
+        transform: translateY(100%);
     }
     100% {
         opacity: 0.8;
@@ -66,7 +66,8 @@
     height: 50vh; 
     object-fit: cover; 
     transform: translate(-50%, -50%);
-    z-index: 0;
+    z-index: -1;
+    opacity: 0.05;
 }
 @media (min-width: 768px) {
     .background-image {

@@ -1,0 +1,129 @@
+.barritas {
+    margin: 0.5em;
+    width: 325px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    position: relative; /*esto no lo tenia*/
+    overflow: hidden; /* Para que el relleno no sobresalga */
+    &.second::before {
+        width: 275px;
+    }
+    &.third::before {
+        width: 250px;
+    }
+    &.fourth::before {
+        width: 375px;
+    }
+    &.fifth::before {
+        width: 200px;
+    }
+}
+
+
+/* Barra de relleno */
+.barritas::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--main-brand-color);
+    animation-name: relleno;
+    animation-timing-function: linear forwards;
+    animation-duration: 3s;
+}
+
+/* Animación para las barras */
+@keyframes relleno {
+    0% {
+        width: 100px;
+        background-color: #fff;
+    }
+    50% {
+        background-color: #fff;
+    }
+}
+
+/* Especificar rellenos de diferentes tamaños */
+.barritas.second::before {
+    width: 275px; /* La barra se rellena hasta 275px */
+}
+
+.barritas.third::before {
+    width: 250px; /* La barra se rellena hasta 250px */
+}
+
+.barritas.fourth::before {
+    width: 375px; /* Aunque excede 325px, la barra se rellena hasta 375px */
+}
+
+.barritas.fifth::before {
+    width: 200px; /* La barra se rellena hasta 200px */
+}
+
+-----------------------------
+
+
+.barritas {
+    margin: 0.5em;
+    width: 325px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    text-align: left;
+    color: white;
+    &.second::before {
+        width: 275px;
+        border-radius: 30px;
+    }
+    &.third::before {
+        width: 250px;
+        border-radius: 30px;
+    }
+    &.fourth::before {
+        width: 375px;
+        border-radius: 30px;
+    }
+    &.fifth::before {
+        width: 200px;
+        border-radius: 30px;
+    }
+}
+
+/* Barra de relleno */
+.barritas::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--main-brand-color);
+    animation-name: relleno;
+    animation-timing-function: linear forwards;
+    animation-duration: 3s;
+    z-index: 1;
+}
+
+.barritas span {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+/* Animación para las barras */
+@keyframes relleno {
+    0% {
+        width: 100px;
+        background-color: #fff;
+    }
+    50% {
+        background-color: #fff;
+    }
+}

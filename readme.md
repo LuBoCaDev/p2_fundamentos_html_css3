@@ -18,7 +18,7 @@ https://marvelcinematicuniverse.fandom.com/es/wiki/Saga_del_Infinito
 A la izquierda muestra el logo de los Vengadores. A la derecha encontramos enlaces a los elementos del portafolio, con estado hover suavizado. Algunos se ven en la versión móvil y otros no. El botón de "Recibir más info" va al formulario al final de la página de index y, por tanto, en las otras páginas se ha vinculado con `index.html#formulario`. Tanto estos botones como los del formulario y la página 404 tienen el estado hover suavizado.__*El CSS se puede encontrar en header.css y el de los botones en components.css*__.
 
 * #### Sección con nuestra descripción y barras de habilidades
-Se encuentran en el index. La descripción es la parte donde pone "Sobre los Vengadores" y la de las habilidades justo a continuación. Las barras empiezan en color blanco al igual que el color del texto, y a partir del 50% cambian al rojo, haciendo el efecto de que las letras también aparecen a partir de ese momento, aunque en realidad ya estaban ahí. __**La animación de las barras se encuentra en spinners.css.**__
+Se encuentran en el index. La descripción es la parte donde pone "Sobre los Vengadores" y la de las habilidades justo a continuación. Las barras empiezan en color blanco al igual que el color del texto, y a partir del 50% cambian al rojo. __**La animación de las barras se encuentra en spinners.css.**__
 
 * #### Banner con dos imágenes de fondo
 En el index. Aunque visualmente el "dibujo" es el mismo, son dos imágenes (archivos) diferentes, que al final es lo que se buscaba. Se ha hecho mediante una media query. __**Se ha estilado en banner.css.**__
@@ -105,7 +105,7 @@ En el centro total de esta página, Deadpool (quién si no) nos da el error 404.
 Debajo de Deadpool, hay un botón intencionalmente muy pequeñito y disimulado para volver a la página principal. Es así de pequeño porque Deadpool es así de gamberro y quiere que nos quedemos con él. Aunque, al pasar el ratón por encima, el color del botón cambia para que se visualice ligeramente mejor (tan mal chaval no es).
 
 * #### Error 500
-En esta página, Deadpool vuelve a hacer de las suyas. En este caso, la imagen está de fondo y el texto se superpone. Además, nos encontramos con un video con animación fade in de entrada cayendo desde arriba y haciéndose más opaco gradualmente, pero no del todo, para que sigamos viendo la maravillosa pose de Deadpool.
+En esta página, Deadpool vuelve a hacer de las suyas. En este caso, la imagen está de fondo y el texto se superpone. Además, nos encontramos con un video con animación fade in de entrada entrando desde abajo y haciéndose más opaco gradualmente, pero no del todo, para que sigamos viendo la maravillosa pose de Deadpool.
 <p>
 El video se reproduce automáticamente y en silencio, empezando a la mitad, que es el mejor momento del videoclip y en el que lo da todo.
 

@@ -36,8 +36,11 @@
     height: 80vh;
     margin: 0;
     flex-direction: column;
-    padding-top: 20rem;
-    padding-bottom: 25rem;
+    padding-top: 30rem;
+    padding-bottom: 30rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+
 }
 @media screen and (min-width: 768px) {
     .general-contenido {
@@ -47,5 +50,12 @@
     .contenido-alternativo {
         text-align: left;
         width: 40%;
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    .general-body {
+        padding-top: 25rem;
+        padding-bottom: 25rem;
     }
 }

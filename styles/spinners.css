@@ -1,36 +1,80 @@
-.barritas {
-    margin: 0.5em;
-    background-color: var(--main-brand-color);
-    width: 325px;
+.barras {
+    margin: 0.8em;
+    width: 100%;
     height: 50px;
-    animation-name: test;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    border-radius: 30px;
     border: 1px solid white;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
     display: flex;
     align-items: center;
     padding-left: 10px;
     text-align: left;
-    &.second {
-        width: 275px;
+    font-size: medium;
+    &.first::before {
+        width: 90%;
+        border-radius: 30px;
     }
-    &.third {
-        width: 250px;
+    &.second::before {
+        width: 80%;
+        border-radius: 30px;
     }
-    &.fourth {
-        width: 375px;
+    &.third::before {
+        width: 70%;
+        border-radius: 30px;
     }
-    &.fifth {
-        width: 200px;
+    &.fourth::before {
+        width: 100%;
+        border-radius: 30px;
+    }
+    &.fifth::before {
+        width: 40%;
+        border-radius: 30px;
     }
 }
-@keyframes test{
+
+/* Barra de relleno */
+.barras::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--main-brand-color);
+    animation-name: relleno;
+    animation-timing-function: linear forwards;
+    animation-duration: 3s;
+    z-index: 1;
+}
+
+.barras span {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+/* Animación para las barras */
+@keyframes relleno {
     0% {
-        width: 100px;
+        width: 150px;
         background-color: #fff;
     }
     50% {
         background-color: #fff;
     }
 }
+
+/*para encajar mejor las barras*/
+.barras-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 480px) {
+    .barras-container {
+        width: 100%; /* Ancho fijo para resoluciones pequeñas */
+        margin: 0 auto; /* Centra el contenedor */
+    }
+}
+
+
