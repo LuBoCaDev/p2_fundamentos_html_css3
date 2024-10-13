@@ -22,15 +22,12 @@
     display: flex;
 }
 
-
-
-
-.header {
-    padding-bottom: 0;
-}
-.general-body {
-    padding: 10px 0;
-}
-.footer {
-    padding-top: 0;
+@media (max-width: 768px) {
+    .clash {
+        width: 100%;
+        height: auto;
+    }
+    .clash img:hover {
+        width: 50%;
+    }
 }

@@ -27,13 +27,35 @@
         display: none;
     }
 }
+
 /*ESTRUCTURA GENERAL DE LOS CONTENIDOS*/
 .general-body {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 700px;
-    width: 100%;
-    margin: 0 auto;
+    height: 80vh;
+    margin: 0;
+    flex-direction: column;
+    padding-top: 30rem;
+    padding-bottom: 30rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+
+}
+@media screen and (min-width: 768px) {
+    .general-contenido {
+        text-align: left;
+        width: 25%;
+    }
+    .contenido-alternativo {
+        text-align: left;
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    .general-body {
+        padding-top: 25rem;
+        padding-bottom: 25rem;
+    }
 }

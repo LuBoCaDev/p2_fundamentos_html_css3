@@ -75,9 +75,9 @@ Por ahora nada.
 * #### Index
 En nuestra página principal, lo primero que encontramos es un banner con una imagen de fondo que cambia si la resolución de pantalla es diferente. La imagen (visualmente) es la misma, pero en realidad son dos archivos diferentes. La finalidad es que la imagen se recorte en torno al centro de la armadura de Iron Man, como centro de la esfera exterior que enmarca a los protagonistas principales. La imagen tiene superpuesto un título principal seguido de un texto en cursiva.
 <p>
-Seguidamente, nos encontramos un apartado con su propio título que nos cuenta sobre quiénes son los Vengadores. En pantallas con resolución grande, se expande lateralmente más que el resto de elementos de la página, pero solo hasta cierto punto.
+Seguidamente, nos encontramos un apartado con su propio título que nos cuenta sobre quiénes son los Vengadores.
 <p>
-El siguiente bloque empieza con un título menor que el anterior (h2) que nos muestra unas animaciones con las principales habilidades de nuestros héroes.
+El siguiente bloque empieza con un título diferente al anterior (h2) que nos muestra unas animaciones con las principales habilidades de nuestros héroes.
 <p>
 Las animaciones consisten en unas barras crecientes que, a mitad de su progreso, muestran a qué hacen referencia.
 <p>
